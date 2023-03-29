@@ -4,7 +4,7 @@ const express = require('express');
 // Require tenorjs near the top of the file
 const Tenor = require("tenorjs").client({
   // Replace with your own key
-  "Key": "AIzaSyCfPmjF3cfN-DPvoCGSXpILk36ut0Lp15c",
+  "Key": "REPLACE API KEY",
   "Filter": "high", // "off", "low", "medium", "high", not case sensitive
   "Locale": "en_US", // Your locale here, case-sensitivity depends on input
 });
