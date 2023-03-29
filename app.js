@@ -1,3 +1,4 @@
+
 // Require Libraries
 const express = require('express');
 
@@ -7,10 +8,11 @@ const Tenor = require("tenorjs").client({
     "Key": "TENOR_API_KEY", // https://tenor.com/developer/keyregistration
     "Filter": "high", // "off", "low", "medium", "high", not case sensitive
     "Locale": "en_US", // Your locale here, case-sensitivity depends on input
-  });
+});
 
 // App Setup
 const app = express();
+app.use(express.static('public'));
 
 // Middleware
 const exphbs  = require('express-handlebars');
